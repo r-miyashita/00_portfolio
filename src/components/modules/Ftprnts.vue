@@ -1,10 +1,24 @@
 <script setup lang="ts">
 import ftprntImg from "@/assets/common/footprint.svg";
 import { onMounted } from "vue";
-import { addIo } from "@/components/modules/Functions.vue"
 
 onMounted(() => {
     addIo('.ftprnts__img', 'appear');
+    function addIo(target: string, key: string): void {
+        const els = document.querySelectorAll(target);
+        const addition = key;
+        const addClass = (entries: any): void => {
+            entries.forEach( (entry: any) => {
+                if(entry.isIntersecting && !entry.target.classList.contains(addition)) {
+                    entry.target.classList.add(addition);
+                }
+            });
+        }; 
+        const io = new IntersectionObserver(addClass);
+        els.forEach(el => {
+            io.observe(el);
+        });
+    }
 });
 
 
