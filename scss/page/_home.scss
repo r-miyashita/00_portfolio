@@ -1,0 +1,56 @@
+@use "../global/" as *;
+
+.home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    margin-top: 4vh;
+    &__mv {
+        display: block;
+        margin: 0 auto;
+        max-width: 380px;
+        transform: translateX(6.25%);
+    }
+    &__intrdcton {
+        margin-top: -3rem;
+        text-align: left;
+    }
+    &__container {
+        height: 100vh;
+        margin-bottom: 40vh;
+    }
+}
+
+.intrdcton { /* intrdcton = introduction */
+    &__ttl {
+        position: relative;
+        margin-bottom: 1.5rem;
+        &::after {
+            content: "";
+            background: url(./asset/home/shadow.svg) no-repeat;
+            background-size: contain;
+            display: inline-block;
+            height: 23px;
+            position: absolute;
+            bottom: -.375rem;
+            left: -3.5rem;
+            width: 337px;
+            z-index: -1;
+        }
+    }
+    &__txt {
+        transform: translateX(10%);
+        width: 80%;
+    }
+}
+
+.door {
+    opacity: 1;
+    transition: 2s;
+    transform: rotateY(0deg);
+    transform-origin: right;
+    &.open {
+        @include open-door;
+    }
+}

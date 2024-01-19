@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Jura:wght@700&display=swap');
+
+/* color */
+$c_red: rgba(255, 0, 0, 0.70); // ヘッダータイトル
+$c_black: #000; // テキスト
+$c_yellow: #FFF500; // テキスト_ページ終端タイトル
+$c_gray: #979797; // メニューのホバー
+$c_gray-dark: #808080; 
+
+/* font */
+$ff_pri: DotGothic16; // テキスト全般
+$ff_sec: Jura; // メニュー・セクションタイトル
+
+// 1rem = 16px
+$fs_xs: 0.875rem; // sec: {intorduction, skills, works} の説明文 @14px
+$fs_s: 1rem; // menu @16px
+$fs_m: 1.25rem; // sec: works のサマリータイトル @20px
+$fs_lg: 1.5rem; // アイキャッチ @24px
+$fs_xl: 2rem; // sec: skills のスキル名 @32px
+$fs_xxl: 2.5rem; // 各セクションのタイトル @40px

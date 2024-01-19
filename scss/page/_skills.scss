@@ -1,0 +1,31 @@
+.skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    &__container {
+        margin-bottom: 23vh;
+    }
+    &__ttl {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    &__btn-list {
+        display: inline-block;
+        margin-bottom: 3rem;
+    }
+    &__btn {
+        &:first-child {
+            margin-left: 2rem;
+        }
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+    &__bg {
+        background: url(./asset/skills/floor.svg);
+        height: 35vh;
+        width: 100vw;
+    }
+}
+

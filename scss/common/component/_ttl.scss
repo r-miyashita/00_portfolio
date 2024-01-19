@@ -1,0 +1,15 @@
+@use "../../global/" as *;
+
+@mixin ttl {
+    color: $c_black;
+    font-family: $ff_sec;
+    font-size: $fs_xxl;
+    letter-spacing: .125rem;
+    opacity: 1;
+    @include glitch-font;
+
+}
+
+.ttl {
+    @include ttl;
+}

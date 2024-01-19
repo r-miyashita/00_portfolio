@@ -1,0 +1,26 @@
+@use "../../global/" as *;
+@use "../../common/" as *;
+
+.skill {
+    display: flex;
+    justify-content: center;
+    &__img {
+        max-width: 350px;
+    }
+    &__mv,
+    &__dscrpton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    &__mv {
+        align-items: center;
+    }
+    &__dscrpton {
+        align-items: start;
+        > img {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

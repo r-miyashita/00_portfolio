@@ -1,0 +1,20 @@
+@use "../../global/" as *;
+
+@mixin eyctch {
+    font-family: $ff_pri;
+    font-size: $fs_lg;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    line-height: 2rem;
+    opacity: 0;
+    @include blink-font($c_red, 1500ms);
+}
+
+.eyctch { /* eyctch = eyecatch */
+    @include eyctch;
+    &--ending {
+        @include eyctch;
+        @include blink-font($c_yellow);
+        letter-spacing: 0.75rem;
+    }
+}

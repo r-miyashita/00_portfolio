@@ -1,0 +1,27 @@
+@use "../../global/" as *;
+
+.summary {
+    padding: 2rem 0;
+    &__heading {
+        font-family: $ff_sec;
+        font-size: $fs_m;
+        letter-spacing: .125rem;
+        margin-bottom: 1rem;
+    }
+    &__list {
+        margin-bottom: 3rem;
+        & > li {
+            color: $c_gray-dark;
+        }
+    }
+    &__dscrpton {
+        color: $c_gray-dark;
+    }
+    &__list,
+    &__dscrpton {
+        font-size: $fs_xs;
+        letter-spacing: .1375rem;
+        line-height: 1.5rem;
+        padding-left: 1rem;
+    }
+}

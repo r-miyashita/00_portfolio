@@ -1,0 +1,49 @@
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    &__container {
+        align-items: center;
+        bottom: 8vh;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 1;
+    }
+    &__bg1 {
+        margin-bottom: 16vh;
+        transform: translateX(-10vw);
+    }
+    &__bg2 {
+        background-color: #5570FF;
+        border-left: solid 4px black;
+        border-top: solid 4px black;
+        height: 40vh;
+        position: relative;
+        width: 80vw;
+        &::before {
+            background: url(./asset/common/cusshon.svg) no-repeat;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            max-width: 65vw;
+            position: absolute;
+            top: -17vh;
+            right: 0;
+            width: 520px;
+            z-index: -1;
+        }
+    }
+    &__inner {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        width: 100vw;
+    }
+    &__ttl {
+        margin-bottom: 7vh;
+    }
+}

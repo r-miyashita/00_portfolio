@@ -1,0 +1,38 @@
+@use "../global/" as *;
+
+@mixin txt(
+    $font-family: $ff_pri,
+    $font-size: $fs_xs,
+    $letter-spacing: 0.0875rem,
+    $line-height: 1.925rem ) {
+        font-family: $font-family;
+        font-size: $font-size;
+        letter-spacing: $letter-spacing;
+        line-height: $line-height;
+}
+
+.container {
+    padding: 0 4.5%;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.txt {
+    @include txt;
+    &--wider {
+        @include txt(
+            $letter-spacing: 0.13125rem,
+            $line-height: 1.75rem
+        )
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    &.active {
+        @include animation(
+            $name: fadein-anim,
+            $duration: 1.75s
+        );
+    }
+}

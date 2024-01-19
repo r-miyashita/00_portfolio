@@ -1,0 +1,18 @@
+$c_btn: #00ffdc96;
+
+@mixin button {
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+    line-height: 1.125rem;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.button {
+    @include button;
+        &.active {
+            background-color: $c_btn;
+        }
+}

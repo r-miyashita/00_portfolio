@@ -1,0 +1,24 @@
+@use "../../global/" as *;
+
+.ftprnts { /* ftprnts = footprints */
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    &__img {
+        opacity: 0;
+        margin-bottom: 250%;
+        &:nth-child(odd) {
+            transform: translateX(75%) rotateZ(5deg);
+        }
+        &:nth-child(even) {
+            transform: translateX(-75%) rotateZ(-5deg);
+        }
+        &.appear {
+            @for $i from 1 through 8 {
+                &:nth-child(#{$i}) {
+                    @include make-ftprnt($i * .125s);
+                }
+            }
+        }
+    }
+}

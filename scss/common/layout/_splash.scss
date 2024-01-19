@@ -1,0 +1,34 @@
+@use "../../global/" as *;
+
+.splash {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    width: 100vW;
+    z-index: 999;
+    &__item {
+        @include splash-in;
+        color: $c_gray;
+        opacity: 0;
+        display: inline-block;
+        font-family: $ff_pri;
+        min-width: 0.3em;
+        font-size: 2rem;
+        transform: translateY(-80px);
+        letter-spacing: .375rem;
+        @for $i from 1 through 24 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * .075s;
+            }
+        }
+    }
+}
+
+

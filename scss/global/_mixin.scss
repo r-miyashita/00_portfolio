@@ -1,0 +1,64 @@
+@use "./variable" as *;
+@use "./keyframe" as *;
+
+@mixin animation($name,
+    $duration: 1s,
+    $timing-function: ease,
+    $delay: 0s,
+    $iteration-count: 1,
+    $direction: normal,
+    $fill-mode: forwards) {
+        animation: {
+        name: $name;
+        duration: $duration;
+        timing-function: $timing-function;
+        delay: $delay;
+        iteration-count: $iteration-count;
+        direction: $direction;
+        fill-mode: $fill-mode;
+    }
+}
+
+@mixin blink-font(
+    $color: $c_black,
+    $dur: 750ms) {
+        color: $color;
+        @include animation(
+            $name: blink,
+            $duration: $dur,
+            $iteration-count: infinite
+        );
+}
+
+@mixin glitch-font {
+    @include animation(
+        $name: glitch,
+        $duration: 8s,
+        $iteration-count: infinite
+    );
+}
+
+@mixin open-door {
+    @include animation(
+        $name: rotate-y,
+        $duration: 4s,
+        $direction: alternate,
+        $iteration-count: 2
+    );
+}
+
+@mixin make-ftprnt($del: 0s) {
+    @include animation(
+        $name: blink,
+        $duration: .25s,
+        $delay: $del,
+    );
+}
+
+@mixin splash-in {
+    @include animation(
+        $name: fadein-anim2,
+        $duration: 1s,
+        $iteration-count: 1
+    );
+}

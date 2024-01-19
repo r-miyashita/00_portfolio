@@ -1,0 +1,11 @@
+<svg width="395" height="427" viewBox="0 0 395 427" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="46.0882" y="173.055" width="313" height="180" transform="rotate(14.0383 46.0882 173.055)" fill="#C16800" stroke="black" stroke-width="4"/>
+<rect x="58.2142" y="194.641" width="279" height="144" transform="rotate(14.0383 58.2142 194.641)" fill="white" stroke="black" stroke-width="4"/>
+<line x1="294.24" y1="402.736" x2="306.366" y2="424.322" stroke="black" stroke-width="4"/>
+<line y1="-2" x2="24.7588" y2="-2" transform="matrix(0.842469 -0.538745 -0.538745 -0.842469 328.154 261.106)" stroke="black" stroke-width="4"/>
+<line y1="-2" x2="24.7588" y2="-2" transform="matrix(0.842469 -0.538745 -0.538745 -0.842469 0.727692 346.224)" stroke="black" stroke-width="4"/>
+<line x1="47.3467" y1="174.016" x2="59.4727" y2="195.602" stroke="black" stroke-width="4"/>
+<line x1="290.538" y1="56.0325" x2="350.538" y2="249.033" stroke="black" stroke-width="2"/>
+<line x1="283.034" y1="52.2215" x2="46.0345" y2="172.221" stroke="black" stroke-width="2"/>
+<circle cx="283.583" cy="60.3293" r="7.5" fill="#FF0000" stroke="black" stroke-width="3"/>
+</svg>

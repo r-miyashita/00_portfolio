@@ -1,0 +1,12 @@
+@use "../global/" as *;
+
+*,
+body {
+    color: $c_black;
+    font-family: $ff_pri;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
