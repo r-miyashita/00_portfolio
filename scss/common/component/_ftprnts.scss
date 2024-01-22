@@ -9,10 +9,10 @@
         margin-bottom: 250%;
         max-width: 37.74px;
         @include media('tab') {
-            max-width: 37.74px * 0.85;
+            max-width: 37.74px * 0.75;
         }
         @include media('sp') {
-            max-width: 37.74px * 0.75;
+            max-width: 37.74px * 0.65;
         }
         &:nth-child(odd) {
             transform: translateX(75%) rotateZ(5deg);

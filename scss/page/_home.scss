@@ -7,10 +7,10 @@
     margin-bottom: 10vh;
     margin-top: 4vh;
     @include media('tab') {
-        margin-top: 8vh;
+        margin-top: 6vh;
     }
     @include media('sp') {
-        margin-top: 12vh;
+        margin-top: 8vh;
     }
     &__mv {
         display: block;
@@ -62,18 +62,18 @@
             display: inline-block;
             height: 23px;
             position: absolute;
-            bottom: -.375rem;
-            left: -3.5rem;
+            bottom: -15%;
+            left: -4%;
             width: 337px;
             z-index: -1;
             @include media('tab') {
-                bottom: -0.475rem;
-                left: -1.25rem;
+                bottom: -20%;
+                left: -3%;
                 width: 275px;
             }
             @include media('sp') {
-                bottom: -0.6rem;
-                left: 3.25rem;
+                bottom: -30%;
+                left: 30%;
                 width: 265px;
             }
         }

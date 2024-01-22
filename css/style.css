@@ -311,12 +311,12 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .ftprnts__img {
-    max-width: 32.079px;
+    max-width: 28.305px;
   }
 }
 @media screen and (max-width: 767px) {
   .ftprnts__img {
-    max-width: 28.305px;
+    max-width: 24.531px;
   }
 }
 .ftprnts__img:nth-child(odd) {
@@ -566,7 +566,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .summary {
-    padding-inline: 5rem;
+    padding-inline: 3rem;
   }
 }
 .summary__heading {
@@ -910,12 +910,12 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .home {
-    margin-top: 8vh;
+    margin-top: 6vh;
   }
 }
 @media screen and (max-width: 767px) {
   .home {
-    margin-top: 12vh;
+    margin-top: 8vh;
   }
 }
 .home__mv {
@@ -982,22 +982,22 @@ img {
   display: inline-block;
   height: 23px;
   position: absolute;
-  bottom: -0.375rem;
-  left: -3.5rem;
+  bottom: -15%;
+  left: -4%;
   width: 337px;
   z-index: -1;
 }
 @media screen and (max-width: 1024px) {
   .intrdcton__ttl::after {
-    bottom: -0.475rem;
-    left: -1.25rem;
+    bottom: -20%;
+    left: -3%;
     width: 275px;
   }
 }
 @media screen and (max-width: 767px) {
   .intrdcton__ttl::after {
-    bottom: -0.6rem;
-    left: 3.25rem;
+    bottom: -30%;
+    left: 30%;
     width: 265px;
   }
 }
