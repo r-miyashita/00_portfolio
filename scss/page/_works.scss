@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 45vh;
+    @include media('sp') {
+        margin-bottom: 35vh;
+    }
     &__content {
         display: flex;
         margin-bottom: 2rem;

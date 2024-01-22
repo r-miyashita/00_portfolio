@@ -33,6 +33,7 @@
         }
         @include media('sp') {
             margin-top: 1rem;
+            text-align: center;
         }
     }
     &__container {
@@ -52,6 +53,7 @@
         position: relative;
         margin-bottom: 1.5rem;
         @include media('sp') {
+            display: inline-block;
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -73,7 +75,7 @@
             }
             @include media('sp') {
                 bottom: -30%;
-                left: 30%;
+                left: -15%;
                 width: 265px;
             }
         }

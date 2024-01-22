@@ -13,7 +13,8 @@
             font-size: $fs_xs * .9;
         }
         @include media('sp') {
-            font-size: $fs_xs * .9;
+            font-size: $fs_xs * .8;
+            line-height: $line-height * .8;
         }
 }
 

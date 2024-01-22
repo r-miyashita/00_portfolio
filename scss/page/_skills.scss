@@ -7,8 +7,11 @@
     margin-bottom: 10vh;
     &__container {
         margin-bottom: 23vh;
+        @include media('tab') {
+            margin-bottom: 18vh;
+        }
         @include media('sp') {
-            margin-bottom: 8vh;
+            margin-bottom: 4vh;
         }
     }
     &__ttl {

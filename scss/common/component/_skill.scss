@@ -35,13 +35,21 @@
         align-items: start;
         @include media('sp') {
             align-items: center;
-            padding-inline: 5rem;
+            padding-inline: 1rem;
         }
         > img {
             margin-bottom: 0.5rem;
             max-height: 101px;
             @include media('sp') {
                 max-height: 101px * .8;
+            }
+        }
+        > p {
+            @include media('tab') {
+                min-height: 33vh;
+            }
+            @include media('sp') {
+                min-height: 20vh;
             }
         }
     }
