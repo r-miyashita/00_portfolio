@@ -2,16 +2,29 @@
 
 .summary {
     padding: 2rem 0;
+    @include media('tab') {
+        padding: .75rem 0;
+    }
+    @include media('sp') {
+        padding-inline: 5rem;
+    }
     &__heading {
         font-family: $ff_sec;
         font-size: $fs_m;
         letter-spacing: .125rem;
         margin-bottom: 1rem;
+        @include media('tab') {
+            font-size: $fs_m * .8;
+            margin-bottom: 1rem * .5;
+        }
     }
     &__list {
         margin-bottom: 3rem;
         & > li {
             color: $c_gray-dark;
+        }
+        @include media('tab') {
+            margin-bottom: 1.5rem;
         }
     }
     &__dscrpton {
@@ -23,5 +36,12 @@
         letter-spacing: .1375rem;
         line-height: 1.5rem;
         padding-left: 1rem;
+        @include media('tab') {
+            font-size: $fs_xs * .8;
+            line-height: 1.5rem * .8;
+        }
+        @include media('sp') {
+            padding-left: unset;
+        }
     }
 }

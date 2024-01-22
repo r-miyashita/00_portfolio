@@ -6,19 +6,44 @@
     flex-direction: column;
     margin-bottom: 10vh;
     margin-top: 4vh;
+    @include media('tab') {
+        margin-top: 8vh;
+    }
+    @include media('sp') {
+        margin-top: 12vh;
+    }
     &__mv {
         display: block;
         margin: 0 auto;
-        max-width: 380px;
+        max-width: 323px;
         transform: translateX(6.25%);
+        @include media('tab') {
+            max-width: 323px * .7;
+        }
+        @include media('sp') {
+            max-width: 323px * .55;
+            transform: translateX(0);
+        }
     }
     &__intrdcton {
         margin-top: -3rem;
         text-align: left;
+        @include media('tab') {
+            margin-top: -2rem;
+        }
+        @include media('sp') {
+            margin-top: 1rem;
+        }
     }
     &__container {
         height: 100vh;
         margin-bottom: 40vh;
+        @include media('tab') {
+            height: 80vh;
+        }
+        @include media('sp') {
+            height: 70vh;
+        }
     }
 }
 
@@ -26,6 +51,10 @@
     &__ttl {
         position: relative;
         margin-bottom: 1.5rem;
+        @include media('sp') {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
         &::after {
             content: "";
             background: url(./asset/home/shadow.svg) no-repeat;
@@ -37,9 +66,20 @@
             left: -3.5rem;
             width: 337px;
             z-index: -1;
+            @include media('tab') {
+                bottom: -0.475rem;
+                left: -1.25rem;
+                width: 275px;
+            }
+            @include media('sp') {
+                bottom: -0.6rem;
+                left: 3.25rem;
+                width: 265px;
+            }
         }
     }
     &__txt {
+        text-align: left;
         transform: translateX(10%);
         width: 80%;
     }
@@ -50,6 +90,13 @@
     transition: 2s;
     transform: rotateY(0deg);
     transform-origin: right;
+    max-width: 179px;
+    @include media('tab') {
+        max-width: 179px * .85;
+    }
+    @include media('sp') {
+        max-width: 179px * .75;
+    }
     &.open {
         @include open-door;
     }

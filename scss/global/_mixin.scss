@@ -1,6 +1,18 @@
 @use "./variable" as *;
 @use "./keyframe" as *;
 
+$breakpoints: (
+    'sp': 'screen and (max-width: 767px)',
+    'tab': 'screen and (min-width: 768px)',
+    'pc': 'screen and (min-width: 992px)',
+) !default;
+
+@mixin media($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
 @mixin animation($name,
     $duration: 1s,
     $timing-function: ease,

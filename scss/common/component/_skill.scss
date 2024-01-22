@@ -4,8 +4,18 @@
 .skill {
     display: flex;
     justify-content: center;
+    @include media('sp') {
+        flex-direction: column;
+        width: 100%;
+    }
     &__img {
-        max-width: 350px;
+        max-width: 297.5px;
+        @include media('tab') {
+            max-width: 297.5px * .8;
+        }
+        @include media('sp') {
+            max-width: 297.5px * .7;
+        }
     }
     &__mv,
     &__dscrpton {
@@ -13,14 +23,26 @@
         flex-direction: column;
         justify-content: center;
         width: 50%;
+        @include media('sp') {
+            width: 100%;
+        }
     }
     &__mv {
         align-items: center;
+        margin-bottom: 1rem;
     }
     &__dscrpton {
         align-items: start;
+        @include media('sp') {
+            align-items: center;
+            padding-inline: 5rem;
+        }
         > img {
             margin-bottom: 0.5rem;
+            max-height: 101px;
+            @include media('sp') {
+                max-height: 101px * .8;
+            }
         }
     }
 }

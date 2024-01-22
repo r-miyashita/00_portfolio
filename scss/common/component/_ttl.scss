@@ -12,4 +12,10 @@
 
 .ttl {
     @include ttl;
+    @include media('tab') {
+        font-size: $fs_xxl * .85;
+    }
+    @include media('sp') {
+        font-size: $fs_xxl * .7;
+    }
 }

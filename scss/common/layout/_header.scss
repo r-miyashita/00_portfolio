@@ -1,3 +1,4 @@
+@use "../../global/" as *;
 .header {
     margin: 0 auto;
     padding-left: 5%;
@@ -13,5 +14,13 @@
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1250px;
+        @include media('sp') {
+            flex-direction: row-reverse;
+        }
+    }
+    &__ttl {
+        @include media('sp') {
+            display: none;
+        }
     }
 }

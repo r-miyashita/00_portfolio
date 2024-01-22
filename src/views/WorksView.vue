@@ -176,7 +176,6 @@ export default {
 .mySwiper {
   height: 20%;
   box-sizing: border-box;
-  margin-left: 2rem;
   padding: 10px 0;
 }
 

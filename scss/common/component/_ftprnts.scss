@@ -7,6 +7,13 @@
     &__img {
         opacity: 0;
         margin-bottom: 250%;
+        max-width: 37.74px;
+        @include media('tab') {
+            max-width: 37.74px * 0.85;
+        }
+        @include media('sp') {
+            max-width: 37.74px * 0.75;
+        }
         &:nth-child(odd) {
             transform: translateX(75%) rotateZ(5deg);
         }

@@ -1,7 +1,10 @@
+@use "../../global/" as *;
+
 .footer {
     align-items: center;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     &__container {
         align-items: center;
         bottom: 8vh;
@@ -15,6 +18,13 @@
     &__bg1 {
         margin-bottom: 16vh;
         transform: translateX(-10vw);
+        max-width: 150px;
+        @include media('tab') {
+            max-width: 150px * 0.8;
+        }
+        @include media('sp') {
+            max-width: 150px * 0.6;
+        }
     }
     &__bg2 {
         background-color: #5570FF;
@@ -23,6 +33,10 @@
         height: 40vh;
         position: relative;
         width: 80vw;
+        @include media('sp') {
+            border-left: solid 2.5px black;
+            border-top: solid 2.5px black;
+        }
         &::before {
             background: url(./asset/common/cusshon.svg) no-repeat;
             content: "";
@@ -34,6 +48,21 @@
             right: 0;
             width: 520px;
             z-index: -1;
+            @include media('tab') {
+                background-size: contain;
+                height: 85%;
+                right: -10vw;
+                top: -13vh;
+                max-width: unset;
+            }
+            @include media('sp') {
+                height: 65%;
+                right: -20vw;
+            }
+            @media screen and (max-width: 540px){
+                height: 55%;
+                right: -55vw;
+            }
         }
     }
     &__inner {

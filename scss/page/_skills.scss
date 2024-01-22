@@ -1,3 +1,5 @@
+@use "../global/" as *;
+
 .skills {
     align-items: center;
     display: flex;
@@ -5,14 +7,29 @@
     margin-bottom: 10vh;
     &__container {
         margin-bottom: 23vh;
+        @include media('sp') {
+            margin-bottom: 8vh;
+        }
     }
     &__ttl {
         display: inline-block;
         margin-bottom: 1rem;
+        @include media('sp') {
+            text-align: center;
+            width: 100%;
+        }
     }
     &__btn-list {
         display: inline-block;
         margin-bottom: 3rem;
+        @include media('tab') {
+            margin-bottom: 4rem;
+        }
+        @include media('sp') {
+            margin-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+        }
     }
     &__btn {
         &:first-child {
@@ -26,6 +43,9 @@
         background: url(./asset/skills/floor.svg);
         height: 35vh;
         width: 100vw;
+        @include media('sp') {
+            height: 25vh;
+        }
     }
 }
 

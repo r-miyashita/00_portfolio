@@ -1,3 +1,5 @@
+@use "../global/" as *;
+
 .works {
     align-items: center;
     display: flex;
@@ -7,17 +9,42 @@
         display: flex;
         margin-bottom: 2rem;
         width: 100%;
+        @include media('tab') {
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 2rem * 0;
+        }
     }
     &__ttl {
         margin-bottom: 2rem;
+        @include media('tab') {
+            margin-bottom: 2rem * .75;
+        }
+        @include media('sp') {
+            text-align: center;
+        }
     }
     &__mv {
         margin-inline: 2rem;
+        @include media('sp') {
+            margin-inline: auto;
+        }
         &-frame {
             background: url(../src/assets/works/tvMonitor.svg) no-repeat;
+            background-size: cover;
             height: 382px;
             padding: 3%;
             width: 652px;
+            @include media('tab') {
+                height: 382px * .85;
+                padding: 3%;
+                width: 652px * .85; 
+            }
+            @include media('sp') {
+                height: 382px * .52;
+                padding: 3%;
+                width: 652px * .52; 
+            }
         }
     }
 }

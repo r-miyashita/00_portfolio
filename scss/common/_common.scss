@@ -9,6 +9,12 @@
         font-size: $font-size;
         letter-spacing: $letter-spacing;
         line-height: $line-height;
+        @include media('tab') {
+            font-size: $fs_xs * .9;
+        }
+        @include media('sp') {
+            font-size: $fs_xs * .9;
+        }
 }
 
 .container {

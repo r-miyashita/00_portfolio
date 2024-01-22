@@ -18,3 +18,9 @@ $fs_m: 1.25rem; // sec: works のサマリータイトル @20px
 $fs_lg: 1.5rem; // アイキャッチ @24px
 $fs_xl: 2rem; // sec: skills のスキル名 @32px
 $fs_xxl: 2.5rem; // 各セクションのタイトル @40px
+
+// media screen
+$breakpoints: (
+    'sp': 'screen and (max-width: 767px)',
+    'tab': 'screen and (max-width: 1024px)'
+) !default;
