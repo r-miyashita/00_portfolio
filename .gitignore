@@ -32,3 +32,4 @@ coverage
 # 以下も追加
 README.md
 myREADME.md
+dist/
