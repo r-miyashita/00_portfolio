@@ -1,6 +1,6 @@
 <script lang="ts">
 import wkImg1 from "@/assets/works/wk1_portfolio.svg";
-import wkImg2 from "@/assets/works/wk_sample.svg";
+import wkImg2 from "@/assets/works/wk2_todoapp.svg";
 import wkImg3 from "@/assets/works/wk_sample.svg";
 import wkImg4 from "@/assets/works/wk_sample.svg";
 import wkImg5 from "@/assets/works/wk_sample.svg";
@@ -35,14 +35,14 @@ export default {
     const works = [
       {
         no: 1,
-        lang: ["HTML", "CSS/Sass", "Javascript"],
+        lang: ["HTML", "CSS/Sass", "TypeScript"],
         dscrpton: "自身のポートフォリオサイト。デザイン~フロント部分を実装した後にGitHubPagesを利用して公開。フレームワークは 「Vue3」 を使用しています。",
         img: wkImg1
       },
       {
         no: 2,
-        lang: ["N/A"],
-        dscrpton: "slide 2",
+        lang: ["HTML","CSS/Sass", "TypeScript"],
+        dscrpton: "todoアプリ。状態管理ライブラリ「pinia」を使ってCRUD機能を実装。Teleportによるモーダル表示、Props/Emitsを利用したコンポーネント間のデータ受け渡しの学習目的で作成しました。",
         img: wkImg2
       },
       {
